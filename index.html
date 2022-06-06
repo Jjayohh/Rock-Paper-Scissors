@@ -4,16 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors</title>
+    <title>Rock Paper Scissors w/ UI</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/scissors.png" />
   </head>
-
   <body>
-    <div class="flex-container">
-      <h1>Rock, Paper, Scissors!</h1>
-      <button onclick="Game()">Start Game</button>
-      <p>This game is played in the console of your web browser. On Windows/Linux, press CTRL Shift J to open the console.</p>
+    <header class="header">
+      <h1 class="title">Rock, Paper, Scissors</h1>
+    </header>
+    <div class="game">
+      <h1 id="status">Good Luck!</h1>
+      <div id="playerroundImg">
+        <h2>You:</h2>
+        <img id="playerImg" height="115" />
+        <h2>CPU:</h2>
+        <img id="compImg" height="115" />
+      </div>
     </div>
+    <div class="results-box">
+      <p class="playerScore" id="playerChoice">
+        Player: <span id="pScore"></span>
+      </p>
+      <p class="ties">Ties: <span id="tieScore"></span></p>
+      <p class="compScore" id="compChoice">
+        Computer: <span id="cScore"></span>
+      </p>
+    </div>
+    <div class="player-section">
+      <button class="btn" id="btn-rock">
+        <img src="images/rock.png" height="130" alt="Rock" class="rock" />
+      </button>
+      <button class="btn" id="btn-paper">
+        <img src="images/paper.png" height="130" alt="Paper" class="paper" />
+      </button>
+      <button class="btn" id="btn-scissors">
+        <img
+          src="images/scissors.png"
+          height="130"
+          alt="Scissors"
+          class="scissors"
+        />
+      </button>
+    </div>
+    <footer class="footer">Copyright © 2022 Jjayohh</footer>
+    <script src="game.js"></script>
   </body>
-  <script src="game.js"></script>
 </html>

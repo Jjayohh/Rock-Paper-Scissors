@@ -1,14 +1,138 @@
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+:root {
+  --primary-dark: #242930;
+  --secondary-dark: #8c95a1;
+  --secondary-dark-hover: #ccd8eb;
+  --secondary-dark-active: #5b5f68;
+  --header: #0a1422;
+  --primary-color: #c5c5c5;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
 }
 
 button {
   height: auto;
-  background-color: cadetblue;
-  color: beige;
   cursor: pointer;
-  font-size: 24px;
-  border-radius: 5px;
+  border-radius: 6px;
+}
+
+body {
+  background-color: rgb(33, 39, 49);
+  font-family: "Rubik Mono One", sans-serif;
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  font-family: "Bungee", cursive;
+  padding: 15px 0px;
+  background-color: var(--header);
+}
+
+.title {
+  font-size: 38px;
+  color: var(--primary-color);
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#round-results {
+  font-size: 20px;
+  font-weight: 2;
+}
+
+.results-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 600px;
+  gap: 50px;
+  padding: 30px;
+  padding-top: 0px;
+  margin: 0 auto;
+}
+
+#playerroundImg {
+  visibility: hidden;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border: 100px;
+  margin: 0 auto;
+  padding: 25px;
+  gap: 40px;
+}
+
+.score {
+  font-size: 16px;
+  display: table-cell;
+  vertical-align: bottom;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#status {
+  font-size: 28px;
+  font-weight: 2;
+  margin-bottom: 0;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn {
+  border-radius: 10px;
+  border-width: 4px;
+  background-color: var(--secondary-dark);
+}
+
+.btn:hover {
+  background-color: var(--secondary-dark-hover);
+}
+
+.player-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.results {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  color: var(--primary-light);
+  font-size: 12px;
+  font-weight: 2;
 }
