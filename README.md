@@ -1,3 +1,5 @@
 # Rock-Paper-Scissors
 
-set up finalized UI
+Ran into a learning curve here, but I am pleased with the final result. 
+
+Simple Rock Paper Scissors game!
